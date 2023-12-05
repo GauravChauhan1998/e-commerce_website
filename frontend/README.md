@@ -1,7 +1,9 @@
 Clothing E-commerce Website - React.js
+
 Welcome to our Clothing E-commerce website built using React.js! This project focuses on providing a user-friendly interface for browsing and purchasing clothing items across various categories.
 
 Technologies Used:
+
 React.js: Frontend library for building the user interface.
 HTML/CSS: Used for structuring and styling the website.
 JavaScript: Adds interactivity and functionality to the site.
@@ -43,20 +45,4 @@ Clone this repository to your local machine.
 Install the necessary dependencies using npm install.
 Run the application using npm start.
 Access the website in your browser at http://localhost:3000.
-Project Structure:
-php
-Copy code
-├── public/                 # Public assets and index.html
-├── src/                    # Source files
-    ├── components/         # React components
-    ├── pages/              # Different pages (Home, Men, Women, Kids, Login, Signup, Cart)
-    ├── styles/             # CSS or styling files
-    ├── App.js              # Main application component
-    └── ...
-└── ...
-Contributors:
-[Your Name]
-[Contributor 1]
-[Contributor 2]
-License:
-This project is licensed under the [License Name] License - see the LICENSE.md file for details.
+
