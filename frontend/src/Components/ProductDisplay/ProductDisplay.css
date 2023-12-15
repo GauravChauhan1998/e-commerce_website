@@ -79,12 +79,26 @@
     gap: 20px;
 }
 
-.productdisplay-right-sizes div{
+.selected{
     padding: 12px 16px;
     background: #fbfbfb;
-    border: 1px solid #ebebeb;
+    border: 1px solid #ff4141;
+    color: #ff4141;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.notSelected{
+    padding: 12px 16px;
+    background: #fbfbfb;
+    border: 1px solid #6b6969;
+    color: #6b6969;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.productdisplay-right-sizes div::selection{
+    border: 1px solid rgb(99, 240, 99);
 }
 
 .productdisplay-right button{

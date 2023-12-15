@@ -1,0 +1,30 @@
+.payment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 200px;
+}
+
+.payment-container h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.payment-option{
+    width: 500px;
+    height: 50px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.payment-option:hover{
+    border: 1px solid #ff5a5a;
+    color: #ff5a5a;
+}

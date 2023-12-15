@@ -23,7 +23,7 @@
     font-size: 20px;
 }
 
-.newsletter div{
+.newsletter form{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +44,7 @@
     font-size: 16px;
 }
 
-.newsletter div button{
+.newsletter form button{
     width: 210px;
     height: 70px;
     border-radius: 80px;
@@ -69,12 +69,12 @@
         font-size: 15px;
     }
 
-    .newsletter div{
+    .newsletter form{
         width: 430px;
         height: 60px;
     }
 
-    .newsletter div button{
+    .newsletter form button{
         width: 150px;
         height: 60px;
         font-size: 15px;

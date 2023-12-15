@@ -10,7 +10,7 @@
 
 .cartitems-format-main{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr 1fr;
     align-items: center;
     gap: 75px;
     padding: 20px 0px;
@@ -20,18 +20,26 @@
 }
 
 .cartitems-format{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .carticon-product-icon{
-    height: 62px;
+    height: 60px;
 }
 
 .cartitems-remove-icon{
     width: 15px;
     margin: 0px 40px;
     cursor: pointer;
+}
+
+.cartitems-quantity-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -150px;
 }
 
 .cartitems-quantity{

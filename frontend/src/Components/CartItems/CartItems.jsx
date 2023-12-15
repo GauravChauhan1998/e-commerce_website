@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
 import './CartItems.css'
-import remove_icon from '../Assets/cart_cross_icon.png'
+import remove_icon from '../Assets/remove_icon.png'
+import add_icon from '../Assets/add_icon.png'
 
 const CartItems = () => {
-    const {getTotalCartAmount,all_product,cartItems,removeFromCart} = useContext(ShopContext)
+    const {getTotalCartAmount,all_product,cartItems,removeFromCart,addToCart} = useContext(ShopContext)
   return (
     <div className='cartitems'>
         <div className="cartitems-format-main">
@@ -13,7 +15,6 @@ const CartItems = () => {
             <p>Price</p>
             <p>Quantity</p>
             <p>Total</p>
-            <p>Remove</p>
         </div>
         <hr />
         {all_product.map((e)=>{
@@ -23,9 +24,13 @@ const CartItems = () => {
                                 <img src={e.image} alt="" className="carticon-product-icon" />
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
-                                <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                                <div className='cartitems-quantity-container'>
+                                    <img className='cartitems-remove-icon' src={add_icon} onClick={()=>{addToCart(e.id)}} alt="" />
+                                    <button className='cartitems-quantity'>{cartItems[e.id]}</button>
+                                    <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} alt="" />
+                                </div>
                                 <p>${e.new_price*cartItems[e.id]}</p>
-                                <img className='cartitems-remove-icon' src={remove_icon} onClick={()=>{removeFromCart(e.id)}} alt="" />
+                                
                             </div>
                             <hr />
                         </div>                
@@ -51,15 +56,15 @@ const CartItems = () => {
                         <h3>${getTotalCartAmount()}</h3>
                     </div>
                 </div>
-                <button>PROCEED TO CHECKOUT</button>
+                <button><Link style={{textDecoration:'none', color:'#fff'}} to={'/address'}>PROCEED TO CHECKOUT</Link></button>
             </div>
-            <div className="cartitems-promocode">
+            {/* <div className="cartitems-promocode">
                 <p>If you have a promo code, Enter it here</p>
                 <div className="cartitems-promobox">
                     <input type="text" placeholder='Promo code'/>
                     <button>Submit</button>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

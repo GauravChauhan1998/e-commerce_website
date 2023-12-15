@@ -18,7 +18,7 @@ const Hero = () => {
                 <p>for evryone</p>
             </div>
             <div className="hero-latest-button">
-                <div>Latest Collection</div>
+                <a href='#newCollection'>Latest Collection</a>
                 <img src={arrow_icon} alt="" />
             </div>
         </div>
