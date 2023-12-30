@@ -1,0 +1,35 @@
+.App-payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.App-payment form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.App-payment form input{
+    width: 300px;
+    height: 40px;
+}
+
+.App-payment form button{
+    width: 150px;
+    height: 50px;
+    background-color: #ff5a5a;
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+    color: white;
+}
+
+.cvv{
+    margin-top: 20px;
+}

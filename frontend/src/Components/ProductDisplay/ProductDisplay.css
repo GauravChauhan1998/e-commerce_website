@@ -63,7 +63,7 @@
 }
 
 .productdisplay-right-description{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .productsidplay-right-size h1{
@@ -108,6 +108,7 @@
     font-weight: 600;
     color: white;
     background: #ff4141;
+    margin-top: 50px;
     margin-bottom: 10px;
     border: none;
     outline: none;
@@ -119,7 +120,7 @@
 }
 
 .productdisplay-right-category{
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 14px;
 }
 

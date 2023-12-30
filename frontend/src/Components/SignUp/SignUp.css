@@ -46,6 +46,10 @@
     cursor: pointer;
 }
 
+.signup-container button:disabled{
+    background-color: gray;
+}
+
 .signup-login{
     margin-top: 20px;
     color: #5c5c5c;
@@ -67,4 +71,10 @@
     color: #5c5c5c;
     font-size: 18px;
     font-weight: 500;
+}
+
+.error-msg{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ff4141;
 }

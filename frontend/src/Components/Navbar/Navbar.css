@@ -50,7 +50,7 @@
     gap: 45px;
 }
 
-.nav-login-cart button{
+.nav-login-cart button, .sign-out-nav{
     width: 157px;
     height: 58px;
     outline: none;
@@ -80,6 +80,69 @@
     background: red;
     color: white;
 }
+
+.sign-out-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-out-nav img{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.drop-down{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu ul li span{
+    font-size: 20px;
+}
+
+.menu ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.sign-out-container .menu {
+    position: absolute;
+    right: 210px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 100px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sign-out-container .menu.active {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+  }
+
 
 @media only screen and (max-width: 960px) {
     .navbar{

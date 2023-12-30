@@ -28,7 +28,8 @@
     font-size: 16px;
 }
 
-.address-form BUTTON{
+
+.address-form button{
     width: 262px;
     height: 58px;
     outline: none;

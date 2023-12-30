@@ -12,6 +12,7 @@ import women_banner from './Components/Assets/banner_women.png';
 import kid_banner from './Components/Assets/banner_kids.png'
 import Address from './Pages/Address';
 import Payment from './Pages/Payment';
+import CardDetails from './Pages/CardDetails';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/login' element={<LoginSignup/>}/>
           <Route path='/address' element={<Address />}/>
           <Route path='/payment' element={<Payment />}/>
+          <Route path='/card-details' element={<CardDetails />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -46,6 +46,10 @@
     cursor: pointer;
 }
 
+.login-container button:disabled{
+    background-color: gray;
+}
+
 .login-login{
     margin-top: 20px;
     color: #5c5c5c;
@@ -67,4 +71,26 @@
     color: #5c5c5c;
     font-size: 18px;
     font-weight: 500;
+}
+
+.error-msg{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ff4141;
+}
+
+.sign-out{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.sign-out-btn{
+    color: #f21111;
+    font-weight: 600;
+    cursor: pointer;
 }

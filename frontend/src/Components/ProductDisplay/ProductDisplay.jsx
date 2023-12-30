@@ -43,7 +43,7 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-description">
                 Top in sweatshirt fabric made from a cotton blend. Relaxed fit with dropped shoulders and ribbing around the neckline, cuffs and hem. Soft brushed inside.
             </div>
-            <div className="productsidplay-right-size">
+            {/* <div className="productsidplay-right-size">
                 <h1>Select Size</h1>
                 <div className="productdisplay-right-sizes">
                     <div className={selectedSize === 'S' ? 'selected' : 'notSelected'} onClick={() => handleSizeClick('S')}>
@@ -59,7 +59,7 @@ const ProductDisplay = (props) => {
                         XL
                     </div>
                 </div>
-            </div>
+            </div> */}
             <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
             <p className="productdisplay-right-category"><span>Category : </span>Women, T-Shirt, Crop Top</p>
             <p className="productdisplay-right-category"><span>Tags : </span>Modern, Latest</p>
